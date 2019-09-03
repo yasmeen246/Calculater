@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"/>
+
+    <TextView
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorAccent"
+        android:gravity="left"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="64dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/edt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorAccent"
+        android:onClick="clear"
+        android:paddingTop="10dp"
+        android:text="clear"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="75dp"
+        android:layout_height="34dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/button24"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorAccent"
+        android:text="history"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="right|center_vertical|fill_vertical|fill_horizontal|clip_vertical|clip_horizontal"
+        android:paddingLeft="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:scrollX="2dp">
+
+            <Button
+                android:id="@+id/nd"
+                android:background="@drawable/circlebutton"
+                android:onClick="nd"
+                android:text="2nd"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/rad"
+
+                android:background="@drawable/circlebutton"
+                android:text="Rad"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/gazr"
+
+                android:background="@drawable/circlebutton"
+                android:enabled="true"
+                android:onClick="square"
+                android:text="√"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/c"
+                android:background="@drawable/circlebutton"
+                android:onClick="cancle"
+                android:text="c"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="doub"
+                android:text=" ( )"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/button23"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="hundred"
+                android:text="%"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonadd"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="add"
+                android:text="+"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/sin"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="sin"
+                android:text="sin"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cos"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="cos"
+                android:text="cos"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/tan"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="tan"
+                android:text="tan"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button7"
+
+                android:background="@drawable/numberst"
+                android:onClick="siven"
+                android:text="7"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button8"
+
+                android:background="@drawable/numberst"
+                android:onClick="eght"
+                android:text="8"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button9"
+
+                android:background="@drawable/numberst"
+                android:onClick="nine"
+                android:text="9"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonsub"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="sub"
+                android:text="-"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/ln"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="ln"
+                android:text="ln"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/log"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="log"
+                android:text="log"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/xx"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="inversex"
+                android:text="1/x"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button4"
+
+                android:background="@drawable/numberst"
+                android:onClick="four"
+                android:text="4"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button5"
+
+                android:background="@drawable/numberst"
+                android:onClick="five"
+                android:text="5"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button6"
+
+                android:background="@drawable/numberst"
+                android:onClick="six"
+                android:text="6"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonmul"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="mult"
+                android:text="*"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/ee"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="ex"
+                android:text="e^x"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/xxx"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlebutton"
+                android:onClick="sqrttwo"
+                android:text="x²"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/xy"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="xy"
+                android:text="x^y"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button1"
+
+                android:background="@drawable/numberst"
+                android:onClick="one"
+                android:text="1"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button2"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/numberst"
+                android:onClick="two"
+                android:text="2"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+
+                android:background="@drawable/numberst"
+                android:onClick="tree"
+                android:text="3"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttondiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circlebutton"
+                android:onClick="div"
+                android:text="/"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:paddingBottom="1dp">
+
+            <Button
+                android:id="@+id/lxl"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="inverse_sign"
+                android:text="lxl"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bay"
+
+                android:background="@drawable/circlebutton"
+                android:onClick="by"
+                android:text="π"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/e"
+                android:background="@drawable/circlebutton"
+                android:onClick="e"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/button10"
+
+                android:background="@drawable/numberst"
+                android:onClick="dot"
+                android:text="."
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button0"
+
+                android:background="@drawable/numberst"
+                android:onClick="zero"
+                android:text="0"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/pos"
+                android:background="@drawable/numberst"
+                android:onClick="minse"
+                android:text="+/-"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttoneql"
+
+                android:background="@drawable/equl"
+                android:onClick="equal"
+                android:text="="
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>
